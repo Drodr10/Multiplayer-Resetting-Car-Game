@@ -75,7 +75,10 @@ class Game{
                 cars[index-1].y = y;
                 
                 if(index === player.index){
-                    cars[index-1].shapeColor = "red";
+                    fill("red");
+                    //ellipseMode(RADIUS);
+                    ellipse(cars[index-1].x, cars[index-1].y, 100, 100);
+
                     camera.position.x = displayWidth/2;
                     camera.position.y = cars[index-1].y;
                 }
